@@ -27,7 +27,7 @@ const onSquareClicked = (index: number) => {
 </script>
 
 <template>
-  <div class="w-full grid grid-cols-8 border border-black cursor-pointer">
+  <div class="w-full grid grid-cols-8 cursor-pointer bg-white">
     <div
       v-for="(_, index) in NUMBER_OF_SQUARES"
       v-bind:key="index"
