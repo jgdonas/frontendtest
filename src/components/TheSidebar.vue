@@ -12,7 +12,7 @@ const { moves } = useGameStore()
 
     <div
       v-for="(move, index) in moves"
-      v-bind:key="move"
+      v-bind:key="index"
       class="flex px-3 py-2"
       :class="index % 2 === 0 ? 'bg-stone-700' : 'bg-stone-800'"
     >
