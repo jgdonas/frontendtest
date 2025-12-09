@@ -1,12 +1,15 @@
 <script setup lang="ts">
 import { useGameStore } from '@/stores/game'
 
-const { moves } = useGameStore()
+const { moves, reset } = useGameStore()
 </script>
 
 <template>
   <div class="flex flex-col bg-stone-800 text-stone-200 p-4">
-    <h2 class="text-xl font-bold mb-4">Moves</h2>
+    <div class="flex flex-row justify-between">
+      <h2 class="text-xl font-bold mb-4">Moves</h2>
+      <span v-if="moves.length > 0" class="select-none cursor-pointer" @click="reset()">🗑️</span>
+    </div>
 
     <div v-if="moves.length === 0">No moves yet...</div>
 

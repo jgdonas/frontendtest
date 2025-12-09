@@ -26,8 +26,12 @@ export const useGameStore = defineStore('game', () => {
     selectedSquare.value = squareIndex
   }
 
+  const reset = () => {
+    moves.value.splice(0, moves.value.length)
+  }
+
   // Getters
   const moveCount = computed(() => moves.value.length)
 
-  return { addMove, moveCount, moves, selectedSquare }
+  return { addMove, moveCount, moves, reset, selectedSquare }
 })
