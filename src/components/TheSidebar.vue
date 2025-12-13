@@ -5,7 +5,7 @@ const { moves, reset } = useGameStore()
 </script>
 
 <template>
-  <div class="flex flex-col  p-4">
+  <div class="flex flex-col p-4">
     <header>
       <div class="flex flex-row justify-between">
         <h2 class="text-xl font-bold mb-4">Moves</h2>
