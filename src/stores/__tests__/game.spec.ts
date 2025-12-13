@@ -1,6 +1,6 @@
 import { setActivePinia, createPinia } from 'pinia'
 import { describe, it, expect, beforeEach } from 'vitest'
-import { useGameStore } from './../game'
+import { useGameStore } from '@/stores/game'
 
 describe('Game Store', () => {
   beforeEach(() => {
