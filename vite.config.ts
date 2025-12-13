@@ -7,6 +7,7 @@ import versionManifest from '@jose.donas/vite-plugin-version-manifest' // Using 
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
+  base: '/frontendtest/',
   plugins: [vue(), vueDevTools(), versionManifest({ verbose: true }), tailwindcss()],
   resolve: {
     alias: {
