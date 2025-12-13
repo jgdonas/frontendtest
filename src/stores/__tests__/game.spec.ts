@@ -11,7 +11,6 @@ describe('Game Store', () => {
   it('starts with no moves', () => {
     const store = useGameStore()
     expect(store.moves).toHaveLength(0)
-    expect(store.selectedSquare).toBeNull()
   })
 
   it('records a move correctly', () => {
@@ -22,7 +21,6 @@ describe('Game Store', () => {
 
     expect(store.moves).toHaveLength(1)
     expect(store.moves[0]).toBe('a8')
-    expect(store.selectedSquare).toBe(0)
   })
 
   it('calculates algebraic notation correctly', () => {

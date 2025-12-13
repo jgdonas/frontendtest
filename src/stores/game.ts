@@ -6,10 +6,8 @@ const files = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
 export const useGameStore = defineStore('game', () => {
   // State
   const moves = ref<string[]>([])
-  const selectedSquare = ref<number | null>(null)
 
   // Actions
-
   /**
    * Computes the square algebraic notation based on its index (0 => 'a8', 63 => 'h1')
    * and updates the store state.
@@ -23,7 +21,6 @@ export const useGameStore = defineStore('game', () => {
 
     // Update state
     moves.value.push(square)
-    selectedSquare.value = squareIndex
   }
 
   const reset = () => {
@@ -33,5 +30,5 @@ export const useGameStore = defineStore('game', () => {
   // Getters
   const moveCount = computed(() => moves.value.length)
 
-  return { addMove, moveCount, moves, reset, selectedSquare }
+  return { addMove, moveCount, moves, reset }
 })
