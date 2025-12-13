@@ -53,7 +53,7 @@ export default defineConfigWithVueTs(
       'no-relative-import-paths/no-relative-import-paths': [
         'error',
         {
-          allowSameFolder: false, // Do not allow "./GameSidebar.vue"
+          allowSameFolder: true, // Allow "./GameSidebar.vue"
           rootDir: 'src', // Base directory for resolving paths
           prefix: '@', // The alias to use
         },
