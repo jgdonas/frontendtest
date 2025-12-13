@@ -4,6 +4,14 @@ This documentation logs the journey of solving the [Chess.com Frontend Technical
 
 Instead of treating this as a standard coding test, I approached it as a Developer Experience (DevEx) Engineer. My primary goal was to create an environment where the "next developer" could be productive immediately, with safety nets and tooling pre-configured.
 
+This project was created for fun! It serves as a testing ground for frontend configurations and deployments.
+
+🚀 Live Demo
+
+Check out the live demo here:
+
+👉 <https://jgdonas.github.io/frontendtest/>
+
 ## Development Log
 
 Below is the chronological log of the decisions made, the infrastructure built, and the tools selected.
@@ -30,12 +38,12 @@ The architectural choices behind the application code. Why I chose Pinia and Vit
 
 To keep the "Zero-Config" promise, the requirements are minimal:
 
-#### To Run the App (Product Managers / QA):
+### To Run the App (Product Managers / QA)
 
 * Docker Desktop (or Docker Engine)
 * Git
 
-#### To develop (Engineers):
+#### To develop (Engineers)
 
 * Node.js (LTS recommended for local tooling support)
 * VS Code
@@ -46,15 +54,14 @@ If you just want to run the code, the DevEx work in Part 1 makes it simple:
 
 ### 1. Clone the repo
 
-```
+```terminal
 git clone git@github.com:jgdonas/frontendtest.git
 ```
 
 ### 2. Start the environment (Zero Config)
 
-```
+```terminal
 docker compose up
 ```
 
-
-The application will be available at http://localhost:5173.
+The application will be available at <http://localhost:5173>.
