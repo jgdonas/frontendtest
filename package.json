@@ -17,13 +17,15 @@
     "lint:oxlint": "oxlint . --fix -D correctness --ignore-path .gitignore",
     "lint:eslint": "eslint . --fix --cache",
     "lint": "run-s lint:*",
-    "format": "prettier --write --experimental-cli src/"
+    "format": "prettier --write --experimental-cli src/",
+    "prepare": "husky"
   },
   "dependencies": {
     "pinia": "^3.0.4",
     "vue": "^3.5.25"
   },
   "devDependencies": {
+    "@commitlint/config-conventional": "^20.2.0",
     "@jose.donas/eslint-plugin-devex": "^0.1.0",
     "@jose.donas/vite-plugin-version-manifest": "^0.1.2",
     "@prettier/plugin-oxc": "^0.0.5",
@@ -37,12 +39,14 @@
     "@vue/eslint-config-typescript": "^14.6.0",
     "@vue/test-utils": "^2.4.6",
     "@vue/tsconfig": "^0.8.1",
+    "commitlint": "^20.2.0",
     "eslint": "^9.39.1",
     "eslint-plugin-import-x": "^4.16.1",
     "eslint-plugin-no-relative-import-paths": "^1.6.1",
     "eslint-plugin-oxlint": "~1.29.0",
     "eslint-plugin-unused-imports": "^4.3.0",
     "eslint-plugin-vue": "~10.5.1",
+    "husky": "^9.1.7",
     "jiti": "^2.6.1",
     "jsdom": "^27.2.0",
     "npm-run-all2": "^8.0.4",
